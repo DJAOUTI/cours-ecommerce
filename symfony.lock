@@ -1,4 +1,7 @@
 {
+    "cocur/slugify": {
+        "version": "v4.1.0"
+    },
     "doctrine/lexer": {
         "version": "1.2.2"
     },

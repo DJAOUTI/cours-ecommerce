@@ -17,7 +17,7 @@ class TestController
     // Méthode index
     public function index()
     {
-        $tva = $this->calculator->calcul(250);
+        $tva = $this->calculator->calcul(600000);
         dump($tva);
 
         dd("Ca fonctionne !"); //On peut remplacer var-dump() par juste le mot dump (une fonction prè-définie)
