@@ -16,6 +16,6 @@ class Calculator
     {
         $this->logger->info("Un calcul de la tva sur le prix : $prix");
         // Tva est à 20% dan cet exemple
-        return $prix * (20 / 100);
+        return $prix * (19 / 100);
     }
 }
