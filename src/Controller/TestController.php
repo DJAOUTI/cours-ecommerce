@@ -2,18 +2,12 @@
 
 namespace App\Controller;
 
-use App\Taxes\Calculator;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 class TestController
 {
-    // Appel au Calculateur de TVA
-    protected $calculator;
-    public function __construct(Calculator $calculator)
-    {
-        $this->calculator = $calculator;
-    }
+
     // Méthode index
     public function index()
     {
