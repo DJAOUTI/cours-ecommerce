@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 
+use App\Taxes\Detector;
 use App\Taxes\Calculator;
 use Cocur\Slugify\Slugify;
 use Psr\Log\LoggerInterface;
@@ -24,8 +25,11 @@ class HelloController
     /**
      * @Route("/hello/{prenom?world}", name="hello")
      */
-    public function hello($prenom, Slugify $slugify)
+    public function hello($prenom, Slugify $slugify, Detector $detector)
     {
+        dump($detector->detect(200));
+        dump($detector->detect(100));
+
 
         $slugify = $slugify->Slugify("Hello World");
         dump($slugify);

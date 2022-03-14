@@ -34,3 +34,7 @@ services:
             $tva: 20
     # Importer une bibliothèque tiers : Slugify
     Cocur\Slugify\Slugify: ~
+    # Indiquer que le calculator utilise une variable $seuil
+    App\Taxes\Detector:
+        arguments:
+            $seuil: 100
